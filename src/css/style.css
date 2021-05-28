@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  background: #0f3854;
+  background: radial-gradient(ellipse at center, #810075 0%, #65d9 70%);
+  background-size: 100%;
+}
+.timer {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  color: #c0d8e0;
+  text-shadow: 0 0 20px rgba(10, 175, 230, 1), 0 0 20px rgba(10, 175, 230, 0);
+}
+.field {
+  text-align: center;
+}
+.field:not(:last-child) {
+  margin-right: 60px;
+}
+.value {
+  position: relative;
+  display: block;
+  letter-spacing: 0.05em;
+  font-size: 150px;
+}
+.field:not(:first-child) .value::before {
+  content: ':';
+  position: absolute;
+  left: -41%;
+  top: -11px;
+}
+.label {
+  letter-spacing: 0.1em;
+  font-size: 24px;
+}
